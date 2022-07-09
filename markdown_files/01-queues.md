@@ -34,6 +34,8 @@ def enqueue(value, queue):
 
 If we want to remove a value from a queue, we will *dequeue* the first value from the queue. This operation yields a Big O performance of O(n) since we are removing from the start of the dynamic array. We can enqueue values in Python like this:
 
+<!-- LINKED LIST IS 0(1), explain that o(n) is for dynamic array and is easier -->
+
 ```python
 # Example 01
 def dequeue(queue):
@@ -68,6 +70,9 @@ def is_empty(queue):
 
 ***Add work here.*** What are some common errors with queues?
 
+<!-- Implemented a queue with a dynamic array -->
+<!-- Correct order -->
+
 ## Real world example
 
 Now that we have a basic understanding of what a queue is as well as various operations a queue can perform, lets take a look at a real-world example of a queue.
@@ -91,11 +96,7 @@ class CarWash:
 
     def length(self):
         return len(self.queue)
-
-    def is_empty(self):
-        return len(self.queue) == 0
-
-    def __str__(self):
+     f __str__(self):
         return str(self.queue)
 
 car_wash = CarWash()
@@ -111,3 +112,6 @@ car_wash.remove_car()
 ## Problem set
 
 Now it's your turn! The car wash informs you that no more than 10 cars can be in line at a time. Can you add functionality to implement this?
+
+<!-- Add in downloadable file -->
+<!-- What is this ds good at? used for commonly? -->
