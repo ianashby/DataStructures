@@ -1,11 +1,13 @@
 # **Data Structure 01: Queues**
-*Ian Ashby*
-*07/02/2022*
+
+* [Welcome](/markdown_files/00-welcome.md)
+* [Queues](/markdown_files/01-queues.md)
+* [Sets](/markdown_files/02-sets.md)
+* [Trees](/markdown_files/03-trees.md)
 
 ---
 
 ## **Introduction**
-#### Purpose
 
 Queues are often referred to as a "First in, first out" (FIFO) data structure and can be implemented in Python using lists. Being a FIFO data structure means that the first element that is added to the queue will be the first one to removed. 
 
@@ -14,7 +16,7 @@ We can see this illustrated in **Figure 1** where the first element is enqueued,
 <!-- Queue GIF -->
 <figure>
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--LTu3kVda--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://1.bp.blogspot.com/-N-v_FiIdQXM/XlkFCQQYtPI/AAAAAAAAHR0/zxkuX6WfQS8Y8Mkoj1nHZDWtMOD3MjsUwCLcBGAsYHQ/s1600/0_E33E-AjyAUTFjVmM.gif">
-<figcaption align = "center">Figure 1: Basic queue operations. <a href="https://dev.to/adavidoaiei/fundamental-data-structures-and-algorithms-in-c-4ocf">Image Source</a></figcaption>
+<figcaption align = "center">Figure 1: Basic queue operations. <a href="https://dev.to/adavidoaiei/fundamental-data-structures-and-algorithms-in-c-4ocf">(Image Source)</a></figcaption>
 </figure>
 
 #### Operations & Big O
@@ -32,9 +34,7 @@ def enqueue(value, queue):
 
 ###### Dequeue O(n)
 
-If we want to remove a value from a queue, we will *dequeue* the first value from the queue. This operation yields a Big O performance of O(n) since we are removing from the start of the dynamic array. We can enqueue values in Python like this:
-
-<!-- LINKED LIST IS 0(1), explain that o(n) is for dynamic array and is easier -->
+If we want to remove a value from a queue, we will *dequeue* the first value from the queue. This operation yields a Big O performance of O(n) since we are removing from the start of the dynamic array. If we were to use a Linked List, the operation would be O(1); however, dynamic arrays are easier to implement in Python. We can enqueue values in Python like this:
 
 ```python
 # Example 01
@@ -65,13 +65,6 @@ We can also determine whether a queue is empty. This operation yields a Big O pe
 def is_empty(queue):
     return len(queue) == 0
 ```
-
-### Common errors
-
-***Add work here.*** What are some common errors with queues?
-
-<!-- Implemented a queue with a dynamic array -->
-<!-- Correct order -->
 
 ## Real world example
 
@@ -111,7 +104,4 @@ car_wash.remove_car()
 
 ## Problem set
 
-Now it's your turn! The car wash informs you that no more than 10 cars can be in line at a time. Can you add functionality to implement this?
-
-<!-- Add in downloadable file -->
-<!-- What is this ds good at? used for commonly? -->
+Now it's your turn! The car wash informs you that no more than 10 cars can be in line at a time. Can you add functionality to implement this? Download the [work file here](../python_files/CarWash.py) and view a [sample solution here](../python_files/solutions/CarWashSolution.py). 
